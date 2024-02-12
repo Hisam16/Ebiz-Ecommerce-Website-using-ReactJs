@@ -1,0 +1,85 @@
+/* Default styles for InfoSection */
+.info-section {
+  display: flex;
+  flex-direction: row; /* Horizontal layout by default */
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 216);
+  padding: 20px;
+  height: 400px;
+}
+
+.info-section-heading {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 60px;
+  height: 300px;
+  width: 200px;
+  color: rgb(75, 72, 72);
+  font-size: 15px;
+}
+
+.info-card:last-child {
+  margin-right: 0; /* Remove right margin for the last card */
+}
+
+.info-card-image {
+  width: 50px; /* Adjust the size of the image as needed */
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.info-card h3 {
+  font-size: 1.0rem;
+  color: rgb(94, 26, 158);
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  margin: 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+  .info-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .info-card {
+    margin-right: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Media query for smaller screens, including iPhones */
+@media screen and (max-width: 767px) {
+  .info-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .info-card {
+    margin-right: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Media query for smaller screens, including iPhone 13 */
+@media screen and (max-width: 428px) {
+  .info-card {
+    width: 100%;
+    max-width: none;
+  }
+}

@@ -1,0 +1,51 @@
+.App {
+  font-family: 'Arial', sans-serif;
+}
+
+form {
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 300px;
+
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  background-color: #FFCB01;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 300px;
+}
+
+button:hover {
+  background-color: #E34B2D;
+}
+
+span {
+  margin-top: 16px;
+  display: block;
+  font-size: 16px;
+  color: #333;
+}

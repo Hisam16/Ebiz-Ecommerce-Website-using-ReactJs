@@ -1,0 +1,74 @@
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background: #d9d9d9;
+}
+
+.main-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.enquiry-form {
+  max-width: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px; /* Add margin for spacing between image and form on larger screens */
+}
+
+.enquiry-form h2 {
+  text-align: center;
+}
+
+.enquiry-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.enquiry-form label {
+  margin-bottom: 5px;
+}
+
+.enquiry-form input,
+.enquiry-form select {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+/* Style for custom select */
+.custom-select {
+  appearance: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.enquiry-form button {
+  background-color: #FFCB01;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.enquiry-form button:hover{
+    background-color: #E34B2D;
+}
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  .main-section {
+    padding: 40px;
+  }
+
+  .enquiry-form {
+    margin-top: 0;
+  }
+}

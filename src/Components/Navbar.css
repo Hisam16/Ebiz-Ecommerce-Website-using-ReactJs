@@ -1,0 +1,29 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-image {
+  margin: 5px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-image {
+    margin: 5px;
+    max-width: 100%; /* Adjust the width to fill the container */
+    max-height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+

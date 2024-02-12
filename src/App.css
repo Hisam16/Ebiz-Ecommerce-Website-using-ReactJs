@@ -1,0 +1,173 @@
+/* Your default styles */
+
+.full-screen-image {
+  display: flex;
+  width: 100vw; /* Set width to 100% of the viewport width */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.image {
+  width: 50%; /* Each image takes up 50% of the container width */
+  height: 100%; /* Set height to 100% of the container height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+/* Add this to your App.css or create a new CSS file */
+.sub-footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  background-color:#161C20;
+  font-size: 18px;
+}
+/* Add these styles for the WhatsApp button */
+/* Updated styles for the WhatsApp button */
+/* Updated styles for the WhatsApp button */
+.whatsapp-container {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .whatsapp-logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    cursor: pointer;
+  }
+
+/* App.css */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Optionally, you can add styles to remove default margins/padding from the body */
+@media only screen and (max-width: 600px) {
+  .full-screen-image {
+     /* Stack images on top of each other */
+    flex-direction: column-reverse;
+  }
+
+  .image {
+    width: 100%;
+    height: 50%; /* Each image takes up 50% of the container height */
+  }
+}
+
+.carousel-container {
+  max-height: 200px; /* Set the maximum height of the carousel */
+  overflow: hidden; /* Hide any overflow to keep it within the specified height */
+}
+
+.carousel-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the height of the container to 100% */
+}
+
+.carousel-image {
+  max-width: 100px; /* Set the maximum width of the image */
+  height: 100px; /* Set the maximum height of the image */
+  object-fit: contain; /* Maintain the aspect ratio while fitting within the container */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+@media screen and (max-width: 767px) {
+  .carousel-container {
+    max-height: 150px; /* Adjust the maximum height for smaller screens */
+  }
+
+  .carousel-image {
+    max-width: 80%; /* Adjust the maximum width for smaller screens */
+  }
+}
+/* App.css */
+/* ... (other styles) */
+
+body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .qlwapp-container {
+            position: fixed;
+            bottom: 20px; /* Adjust the bottom position as needed */
+            left: 20px; /* Adjust the right position as needed */
+            z-index: 1000; /* Adjust the z-index as needed */
+        }
+
+        .qlwapp-toggle {
+            text-decoration: none;
+            background-color: #25d366; /* Set the background color as needed */
+            color: #fff; /* Set the text color as needed */
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .icon{
+            margin-right: 5px; /* Adjust the margin between the icon and text */
+            height: 20px;
+            width: 20px;
+        }
+
+        .qlwapp-close {
+            cursor: pointer;
+        }
+.full-screen-image {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
